@@ -16,7 +16,7 @@ def basicGrid(grid: Iterable, headerRow: int, colsMinSpace: list[int], headerLin
         finalGrid[headerRow] = ("-" * sum(colsMinSpace, 2 * len(colsMinSpace))) + "\n" + finalGrid[headerRow]
     return "\n".join(finalGrid)
 
-def printGrid(grid: Iterable, headerRow: int=0, headerLinePos: str="Bottom", theme=basicGrid) -> str:
+def makeGird(grid: Iterable, headerRow: int=0, headerLinePos: str="Bottom", theme=basicGrid) -> str:
     """
     Takes an input iterable(tuple or list) and returns a formatted grid.
     headerLinePos should be Bottom, Top, or NoLine.
